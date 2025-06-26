@@ -1,0 +1,36 @@
+New methods for Java : 
+1. str.length() => string length 
+2. char ch [] =  str.toCharArray() => string gets into Array 
+3. str.CharAt(i) ==> identifies character at i 
+4. StringBuffer sb = new StringBuffer ("hello") => mutable .. which means i can do anything and chage the word hello to anything 
+5. String reversed =  new StringBuffer("hello").reverse().toString(). // string buffer is thread safe
+6. StringBuilder sb = new StringBuilder("hello")
+7.sb.append("world") // take strng from sb and add world to it
+8. recursive ==> method(str.substring(1))+ str.charAt(0);
+9. String words [] = str.split("\\s+")
+10. For 2 pointers >> where we come from left and right ==> use only while ! 
+
+
+
+###########for loop : Used when each value of array needs to be stored into other String or char######################### 
+
+String str  = "aksh";
+String two = " ask to get";
+String twoarray[] = two.split(" "); // {ask, to, get} // converts the strinng of sentences to each word in array.
+Char ch [] = str.tocharArray(); // {a,k,s,h}
+Set<Character>set = new HashSet<>(); // set for char type
+Set<String> setto = new LinkedHashSet<>();// when we need orderly things then we go for linked hash 
+for  (int i  = 0 ; i <str.length(); i++){
+    sysout(ch[i]);  // {displays a,k,s,h in each row new onnes}
+    set.add(ch[i]); // here each character is added to set ... 
+}
+for (int i = 0; i < two.length() ; i++){
+     String word = twoarray[i]; // each word ask, to , get stored in word as a new string 
+} // this can also be written as 
+for( String word : twoarray){ // same to same ... each word ask, to , get are stored into word ! 
+
+}
+
+
+
+######################## while loop ################################################################

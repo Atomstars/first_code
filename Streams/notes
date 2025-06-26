@@ -1,0 +1,5 @@
+Streams 
+It  is more like a pipeline 
+It lets you process collections in a functional and chainable way
+Data -> filter -> map ->sort  ->collect ->output 
+
