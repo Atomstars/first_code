@@ -18,7 +18,6 @@ public class array {
             if(!set.contains(num[target])){  // num[3] = 4 
                  set.add(num[target]);
                  target++; // target = 4 
-                 System.out.println(set);
             }
         }
         for(int i= 0 ;i<target;i++){
