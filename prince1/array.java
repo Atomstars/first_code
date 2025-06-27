@@ -9,6 +9,7 @@ public class array {
     int num[] ={1,2,3,4,5,6,7};
     int  target = 3;
     System.out.println("the output is :"+solution(num,target));
+    System.out.println("with optimized soln from gpt :"+solutionop(num,target));
 }
     public static Set<Integer> solution(int num[], int target){
         // num[] = 1,2,3,4,5,6,7
@@ -32,4 +33,18 @@ public class array {
         return set;
 
     }
+
+    public static Set<Integer> solutionop(int num[],int target){
+        Set<Integer>sets = new LinkedHashSet<>(); // {1,2,3,4,5,6,7} //target = 3
+        
+        for(int i = 0;i<num.length;i++){
+         int newset=  (target+i)%num.length;
+         sets.add(num[newset]);
+          
+        }
+
+        return sets;
+    }
+
+
 }

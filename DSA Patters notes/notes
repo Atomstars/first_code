@@ -1,0 +1,26 @@
+Different types of patterns in DSA 
+
+1. Rotated View of an array 
+   There is an Array and a starting index, how can we return all elements in order starting 
+   from that index without duplicates. 
+   >>> Start somewhere in the array 
+   >>> collect all elements in end 
+
+   example : 
+   int [] arr = {2,3,4,5,6,7,8,9}; // length is 8 so index [0,7]
+   int target = 3;
+
+   Start at Index 3 -> then to 4 -> then to 5 -> 6 - > 7-> wrap to 0 -> 1 -> 2
+   Very clear to use a modulo trick !!!
+
+   (3+0) % 7 = 3 
+   (3+1) % 7 = 4 
+   (3+2) % 7 = 5 
+   (3+3) % 7 = 6 
+......................
+   (3+6) % 7 = 2  
+
+   >>>> we are summing => (target + index) modulo of num.length
+
+   **If i want to rotate and wrap around in a circular way I can use (start + i)%num.length;
+

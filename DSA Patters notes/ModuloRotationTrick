@@ -1,0 +1,17 @@
+TRICK -> int index/result =  (start index + i)%num.length
+When to use -> when there is a rotation required in array 
+
+Used for 
+
+Circular buffers / queues
+
+Round-robin scheduling
+
+Rotated array problems (LeetCode style)
+
+Game loops or animations
+
+Hashing functions
+
+Simulating clocks or counters that wrap around
+
